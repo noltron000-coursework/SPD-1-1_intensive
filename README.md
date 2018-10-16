@@ -1,4 +1,4 @@
-# Dream Team App
+# Teamtron Web App
 The idea of this intensive is to create a data-driven team creation application, based on the web.
 
 -[ ] Frontend First
@@ -11,16 +11,19 @@ The idea of this intensive is to create a data-driven team creation application,
 
 ## Frontend First:
 ### User Show
--[ ] Avatar
--[ ] Name
--[ ] Location
--[ ] Locality
--[ ] Synergy
--[ ] Skills
--[ ] Personality
--[ ] Biography
--[ ] External Links
--[ ] Current Teams
--[ ] Message Button
--[ ] "Star" Button
--[ ] Add to Team Button
+- [X] Avatar
+- [X] Name
+- [X] Status
+- [X] Location
+- [ ] Locality
+- [X] Synergy
+- [X] Skills
+- [X] Personality
+- [X] Biography
+- [X] External Links
+- [X] Current Teams
+- [X] Message Button
+- [X] "Star" Button
+- [X] Add to Team Button
+
+###
