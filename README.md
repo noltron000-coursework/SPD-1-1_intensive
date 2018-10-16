@@ -1,12 +1,19 @@
 # Teamtron Web App
 The idea of this intensive is to create a data-driven team creation application, based on the web.
 
--[ ] Frontend First
--[ ] CRUD Users
--[ ] Format User Index
--[ ] CRUD Teams
--[ ] Format Team Index
--[ ] Associate Users to Teams
+- [ ] Frontend First
+- [ ] Foramt Splash Screen
+- [ ] Format New User
+- [X] Format Show User
+- [ ] Format Edit User
+- [ ] Format New Team
+- [X] Format Show Team
+- [ ] Format Edit Team
+- [ ] Format User/Team Index
+- [ ] Format Index Filter
+- [ ] CRUD Users
+- [ ] CRUD Teams
+- [ ] Associate Users to Teams
 
 
 ## Frontend First:
