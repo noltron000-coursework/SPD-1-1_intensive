@@ -25,19 +25,48 @@
 .d {
 	background-color: #50afe2;
 	grid-area: d;
+	display: flex;
+	flex-direction: column;
 }
 
 .e {
 	background-color: #b567f6;
 	grid-area: e;
+	display: flex;
+	flex-direction: column;
 }
+
+
+.e-sub {
+	margin: 20px;
+	background-color: #bd81ee;
+}
+
 
 .f {
 	background-color: #58d848;
 	grid-area: f;
+	display: flex;
+	flex-direction: column;
+}
+
+.f-sub {
+	margin: 20px;
+	background-color: #82e275;
 }
 
 .g {
 	background-color: #2b9b16;
 	grid-area: g;
+	display: flex;
+	flex-direction: column;
+}
+
+.g-sub {
+	margin: 20px;
+	background-color: #4ab437;
+}
+
+.heightify {
+	background-color: rgba(255,255,255,0.0625);
 }
