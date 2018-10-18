@@ -1,77 +1,76 @@
+/* DEFINING THE PRIMARY GRID LAYOUT */
+
+html, body {
+	padding: 0;
+	margin: 0;
+}
+
 .container {
 	display: grid;
 	grid-template-columns: 1fr 2fr 1fr 1fr;
-	grid-template-rows: auto;
+	grid-template-rows: auto auto;
 	grid-template-areas:
 		"a b c d"
 		"e f f g";
 }
 
-.a { /* avatar box */
+#a, #b, #c, #d, #e, #f, #g {
+	display: flex;
+	flex-direction: column;
+}
+
+#a { /* avatar box */
 	background-color: #ea5050;
 	grid-area: a;
 }
 
-.b { /* basic information */
+#b { /* basic information */
 	background-color: #e3ac45;
 	grid-area: b;
 }
 
-.c { /* match algorithm */
+#c { /* match algorithm */
 	background-color: #e8e255;
 	grid-area: c;
 }
 
-.d { /* call-to-action buttons */
+#d { /* call-to-action buttons */
 	background-color: #50afe2;
 	grid-area: d;
 }
 
-.e { /* Users/Teams */
+#e { /* Users/Teams */
 	background-color: #b567f6;
 	grid-area: e;
-	display: flex;
-	flex-direction: column;
 }
 
 
-.f { /* primary content */
+#f { /* primary content */
 	background-color: #58d848;
 	grid-area: f;
-	display: flex;
-	flex-direction: column;
 }
 
 
-.g { /* skills sidebar */
+#g { /* skills sidebar */
 	background-color: #2b9b16;
 	grid-area: g;
-	display: flex;
-	flex-direction: column;
 }
 
 .sub {
-	background: white;
-	opacity: 20%;
+	background: rgba(255,255,255,0.2);
 	margin: 20px;
-}
-
-.d .sub {
 	display: flex;
 	flex-direction: column;
 }
 
-.e .sub {
-	display: flex;
-	flex-direction: column;
+.sub img {
+
 }
 
-.f .sub {
-	display: flex;
-	flex-direction: column;
+.team img {
+	border-radius: 0%;
 }
 
-.g .sub {
-	display: flex;
-	flex-direction: column;
+.mate img {
+	border-radius: 50%;
 }
