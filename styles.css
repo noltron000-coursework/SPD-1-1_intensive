@@ -1,13 +1,13 @@
 .container {
 	display: grid;
-	grid-template-columns: 2fr 4fr 2fr 2fr;
+	grid-template-columns: 1fr 2fr 1fr 1fr;
 	grid-template-rows: auto;
 	grid-template-areas:
 		"a b c d"
 		"e f f g";
 }
 
-.a {
+.avatar {
 	background-color: #ea5050;
 	grid-area: a;
 }
@@ -37,7 +37,7 @@
 }
 
 
-.e-sub {
+.e .sub {
 	margin: 20px;
 	background-color: #bd81ee;
 }
@@ -50,7 +50,7 @@
 	flex-direction: column;
 }
 
-.f-sub {
+.f .sub {
 	margin: 20px;
 	background-color: #82e275;
 }
@@ -62,7 +62,7 @@
 	flex-direction: column;
 }
 
-.g-sub {
+.g .sub {
 	margin: 20px;
 	background-color: #4ab437;
 }
