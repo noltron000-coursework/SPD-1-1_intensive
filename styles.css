@@ -7,29 +7,27 @@
 		"e f f g";
 }
 
-.avatar {
+.a { /* avatar box */
 	background-color: #ea5050;
 	grid-area: a;
 }
 
-.b {
+.b { /* basic information */
 	background-color: #e3ac45;
 	grid-area: b;
 }
 
-.c {
+.c { /* match algorithm */
 	background-color: #e8e255;
 	grid-area: c;
 }
 
-.d {
+.d { /* call-to-action buttons */
 	background-color: #50afe2;
 	grid-area: d;
-	display: flex;
-	flex-direction: column;
 }
 
-.e {
+.e { /* Users/Teams */
 	background-color: #b567f6;
 	grid-area: e;
 	display: flex;
@@ -37,36 +35,43 @@
 }
 
 
-.e .sub {
-	margin: 20px;
-	background-color: #bd81ee;
-}
-
-
-.f {
+.f { /* primary content */
 	background-color: #58d848;
 	grid-area: f;
 	display: flex;
 	flex-direction: column;
 }
 
-.f .sub {
-	margin: 20px;
-	background-color: #82e275;
-}
 
-.g {
+.g { /* skills sidebar */
 	background-color: #2b9b16;
 	grid-area: g;
 	display: flex;
 	flex-direction: column;
 }
 
-.g .sub {
+.sub {
+	background: white;
+	opacity: 20%;
 	margin: 20px;
-	background-color: #4ab437;
 }
 
-.heightify {
-	background-color: rgba(255,255,255,0.0625);
+.d .sub {
+	display: flex;
+	flex-direction: column;
+}
+
+.e .sub {
+	display: flex;
+	flex-direction: column;
+}
+
+.f .sub {
+	display: flex;
+	flex-direction: column;
+}
+
+.g .sub {
+	display: flex;
+	flex-direction: column;
 }
