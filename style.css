@@ -1,6 +1,6 @@
 /* MEDIA QUERIES */
 
-@media screen and ( min-width: 0px ) {
+/* @media screen and ( min-width: 0px ) {
 	.container {
 		display: grid;
 		grid-template-columns: 100%;
@@ -14,17 +14,16 @@
 			"f"
 			"e"
 	}
-}
+} */
 
-@media screen and ( min-width: 400px ) {
+@media screen and ( min-width: 0px ) { /* min-width 300 if above is uncommented */
 	.container {
 		display: grid;
 		grid-template-columns: 1fr 1fr;
 		grid-template-rows: auto;
 		grid-template-areas:
-			"a d"
-			"b b"
-			"c c"
+			"a b"
+			"d c"
 			"g g"
 			"f f"
 			"e e"
@@ -34,11 +33,12 @@
 @media screen and ( min-width: 600px ) {
 	.container {
 		display: grid;
-		grid-template-columns: 1fr 2fr;
-		grid-template-rows: auto auto auto auto;
+		grid-template-columns: auto 2fr;
+		grid-template-rows: auto auto auto auto auto auto;
 		grid-template-areas:
 			"a b"
 			"a c"
+			"d c"
 			"d f"
 			"g f"
 			"e f"
@@ -48,10 +48,11 @@
 @media screen and ( min-width: 900px ) {
 	.container {
 		display: grid;
-		grid-template-columns: 1fr 1fr 1fr;
+		grid-template-columns: auto 1fr 1fr;
 		grid-template-rows: auto auto auto auto;
 		grid-template-areas:
 			"a b c"
+			"a f f"
 			"d f f"
 			"g f f"
 			"e f f";
@@ -61,14 +62,16 @@
 @media screen and ( min-width: 1200px ) {
 	.container {
 		display: grid;
-		grid-template-columns: 1fr 2fr 1fr 1fr;
-		grid-template-rows: auto auto;
+		grid-template-columns: auto 3fr 1fr;
+		grid-template-rows: auto auto auto auto;
 		grid-template-areas:
-			"a b c d"
-			"e f f g";
+			"a b c"
+			"a f g"
+			"d f g"
+			"e f g";
 	}
 }
-
+/*
 @media screen and ( min-width: 1800px ) {
 	.container {
 		display: grid;
@@ -76,37 +79,34 @@
 		grid-template-rows: auto auto;
 		grid-template-areas:
 			"a b c d"
+			"a f f g"
 			"e f f g";
 	}
-}
+} */
 
-@media screen and ( min-width: 2400px ) {
+/* @media screen and ( min-width: 2400px ) {
 	.container {
 		display: grid;
 		grid-template-columns: 1fr 2fr 1fr 1fr;
 		grid-template-rows: auto auto;
 		grid-template-areas:
-			"a b c d"
+			"a b b c"
+			"a f f g"
 			"e f f g";
 	}
-}
-
-@media screen and ( min-width: 2400px ) {
-	.container {
-		display: grid;
-		grid-template-columns: 1fr 2fr 1fr 1fr;
-		grid-template-rows: auto auto;
-		grid-template-areas:
-			"a b c d"
-			"e f f g";
-	}
-}
+} */
 
 /* DEFINING THE PRIMARY GRID LAYOUT */
 
 html, body {
+	font-family: Arial, Helvetica, sans-serif;
+	line-height: 1.5;
 	padding: 0;
 	margin: 0;
+	background-color: #ffffff;
+	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' %3E%3Cdefs%3E%3ClinearGradient id='a' x1='0' x2='0' y1='0' y2='1'%3E%3Cstop offset='0' stop-color='%2380F'/%3E%3Cstop offset='1' stop-color='%23f40'/%3E%3C/linearGradient%3E%3C/defs%3E%3Cpattern id='b' width='24' height='24' patternUnits='userSpaceOnUse'%3E%3Ccircle fill='%23ffffff' cx='12' cy='12' r='12'/%3E%3C/pattern%3E%3Crect width='100%25' height='100%25' fill='url(%23a)'/%3E%3Crect width='100%25' height='100%25' fill='url(%23b)' fill-opacity='0.1'/%3E%3C/svg%3E");
+	background-attachment: fixed;
+	background-size: cover;
 }
 
 #a, #b, #c, #d, #e, #f, #g {
@@ -114,48 +114,61 @@ html, body {
 	flex-direction: column;
 }
 
+#a .sub, #b .sub, #c .sub {
+	height: 100%;
+}
+
 #a { /* avatar box */
-	background-color: #ea5050;
+	/* background-color: #ea5050; */
 	grid-area: a;
 }
 
 #b { /* basic information */
-	background-color: #e3ac45;
+	/* background-color: #e3ac45; */
 	grid-area: b;
 }
 
 #c { /* match algorithm */
-	background-color: #e8e255;
+	/* background-color: #e8e255; */
 	grid-area: c;
 }
 
+
 #d { /* call-to-action buttons */
-	background-color: #50afe2;
+	/* background-color: #50afe2; */
 	grid-area: d;
 }
 
-#e { /* Users/Teams */
-	background-color: #b567f6;
+#e { /* associated users or teams */
+	/* background-color: #b567f6; */
 	grid-area: e;
 }
 
 
-#f { /* primary content */
-	background-color: #58d848;
+#f { /* primary biography content */
+	/* background-color: #58d848; */
 	grid-area: f;
 }
 
 
-#g { /* skills sidebar */
-	background-color: #2b9b16;
+#g { /* skills & traits sidebar */
+	/* background-color: #2b9b16; */
 	grid-area: g;
 }
 
 .sub {
-	background: rgba(255,255,255,0.2);
-	margin: 10px;
+	border-radius: 5px;
+	background: rgba(255,255,255,0.65);
+	box-shadow: 0px 8px 16px white;
+	padding: 5px;
+	margin: 20px;
 	display: flex;
 	flex-direction: column;
+}
+
+img {
+	display: inline-block;
+	text-align: bottom;
 }
 
 .team img {
@@ -167,12 +180,17 @@ html, body {
 }
 
 .avatar img {
-	width: auto%;
+	width: auto;
 	max-width: 100%;
 	max-height: 100%;
 }
 
-/* h1 h2 h3 h4 h5 h6 */
+/* h1 h2 h3 h4 h5 h6 p */
+h1, h2, h3, h4, h5, h6, p {
+	margin-top: 0.375em;
+	margin-bottom: 0.125em;
+}
+
 h1 {
 	font-size: calc(12em/4);
 	font-weight: 900;
@@ -185,8 +203,15 @@ h2 {
 
 h3 {
 	font-size: calc(7em/4);
+	display: inline;
 }
 
 h4 {
 	font-size: calc(5em/4);
+	display: inline;
+}
+
+/* buttons */
+button {
+	padding: 20px;
 }
