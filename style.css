@@ -1,0 +1,192 @@
+/* MEDIA QUERIES */
+
+@media screen and ( min-width: 0px ) {
+	.container {
+		display: grid;
+		grid-template-columns: 100%;
+		grid-template-rows: auto;
+		grid-template-areas:
+			"a"
+			"b"
+			"c"
+			"d"
+			"g"
+			"f"
+			"e"
+	}
+}
+
+@media screen and ( min-width: 400px ) {
+	.container {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: auto;
+		grid-template-areas:
+			"a d"
+			"b b"
+			"c c"
+			"g g"
+			"f f"
+			"e e"
+	}
+}
+
+@media screen and ( min-width: 600px ) {
+	.container {
+		display: grid;
+		grid-template-columns: 1fr 2fr;
+		grid-template-rows: auto auto auto auto;
+		grid-template-areas:
+			"a b"
+			"a c"
+			"d f"
+			"g f"
+			"e f"
+	}
+}
+
+@media screen and ( min-width: 900px ) {
+	.container {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-template-rows: auto auto auto auto;
+		grid-template-areas:
+			"a b c"
+			"d f f"
+			"g f f"
+			"e f f";
+	}
+}
+
+@media screen and ( min-width: 1200px ) {
+	.container {
+		display: grid;
+		grid-template-columns: 1fr 2fr 1fr 1fr;
+		grid-template-rows: auto auto;
+		grid-template-areas:
+			"a b c d"
+			"e f f g";
+	}
+}
+
+@media screen and ( min-width: 1800px ) {
+	.container {
+		display: grid;
+		grid-template-columns: 1fr 2fr 1fr 1fr;
+		grid-template-rows: auto auto;
+		grid-template-areas:
+			"a b c d"
+			"e f f g";
+	}
+}
+
+@media screen and ( min-width: 2400px ) {
+	.container {
+		display: grid;
+		grid-template-columns: 1fr 2fr 1fr 1fr;
+		grid-template-rows: auto auto;
+		grid-template-areas:
+			"a b c d"
+			"e f f g";
+	}
+}
+
+@media screen and ( min-width: 2400px ) {
+	.container {
+		display: grid;
+		grid-template-columns: 1fr 2fr 1fr 1fr;
+		grid-template-rows: auto auto;
+		grid-template-areas:
+			"a b c d"
+			"e f f g";
+	}
+}
+
+/* DEFINING THE PRIMARY GRID LAYOUT */
+
+html, body {
+	padding: 0;
+	margin: 0;
+}
+
+#a, #b, #c, #d, #e, #f, #g {
+	display: flex;
+	flex-direction: column;
+}
+
+#a { /* avatar box */
+	background-color: #ea5050;
+	grid-area: a;
+}
+
+#b { /* basic information */
+	background-color: #e3ac45;
+	grid-area: b;
+}
+
+#c { /* match algorithm */
+	background-color: #e8e255;
+	grid-area: c;
+}
+
+#d { /* call-to-action buttons */
+	background-color: #50afe2;
+	grid-area: d;
+}
+
+#e { /* Users/Teams */
+	background-color: #b567f6;
+	grid-area: e;
+}
+
+
+#f { /* primary content */
+	background-color: #58d848;
+	grid-area: f;
+}
+
+
+#g { /* skills sidebar */
+	background-color: #2b9b16;
+	grid-area: g;
+}
+
+.sub {
+	background: rgba(255,255,255,0.2);
+	margin: 10px;
+	display: flex;
+	flex-direction: column;
+}
+
+.team img {
+	border-radius: 0%;
+}
+
+.mate img {
+	border-radius: 50%;
+}
+
+.avatar img {
+	width: auto%;
+	max-width: 100%;
+	max-height: 100%;
+}
+
+/* h1 h2 h3 h4 h5 h6 */
+h1 {
+	font-size: calc(12em/4);
+	font-weight: 900;
+}
+
+h2 {
+	font-size: calc(9em/4);
+	font-weight: 900;
+}
+
+h3 {
+	font-size: calc(7em/4);
+}
+
+h4 {
+	font-size: calc(5em/4);
+}
