@@ -1,8 +1,18 @@
 # Teamtron Web App
 The idea of this intensive is to create a data-driven team creation application, based on the web.
 
-- [ ] Frontend First
-- [ ] Foramt Splash Screen
+## Wireframe
+(insert wireframes here)
+
+## Results
+The teamtron web app is not fully functional, but the different conceptual pieces are fleshed out. The CSS behind the scenes uses Media Queries and CSS Grid. This version, its appearance is still lacking, and is essentially the wireframe that I drew out brought to life via html and css.
+
+## What I learned
+I learned that shipping an app in one week is feasible--but difficult. One really must strip down the idea to the core "skateboard" prototype idea, and I feel that my teamtron app may have been too lofty for that. In the future, I will try to adhere to this principle more closely.
+
+To Do:
+- [X] Frontend First
+- [ ] Format Splash Screen
 - [ ] Format New User
 - [X] Format Show User
 - [ ] Format Edit User
